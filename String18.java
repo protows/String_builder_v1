@@ -13,7 +13,7 @@ public class String18 {
         for(int i=0; i< items.length; i++){
             String[] res = items[i].split(",");
         
-            System.out.printf("%-10.8s%-5s%-6s%n", res[0].trim(), res[1].trim(), res[2].trim());
+            System.out.printf("%-10.8s %-5s  %-6s%n", res[0].trim(), res[1].trim(), res[2].trim());
         }
     }
 
