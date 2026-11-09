@@ -50,12 +50,29 @@ public class String16 {
         String[] result = grades.split(";");
         for(int i=0; i< result.length; i++){
             String[] parts = result[i].split(",");
+                     StringBuilder sb = new StringBuilder();
+
+            String spaces = " ";
+            sb.append(capitalize(parts[0])).append(spaces).append( capitalize(parts[1])).append(spaces)
+                    .append(parts[2].toLowerCase()).append(spaces).append(" — ").append(gradeToString(parts[3]));
+            System.out.println(sb);  
+       
+            }
+
+    }
+    
+     public void gradeBeautifierJoins(String grades) {
+        String[] result = grades.split(";");
+         StringBuilder sb = new StringBuilder();
+        for(int i=0; i< result.length; i++){
+            String[] parts = result[i].split(",");
          String name = capitalize(parts[0]);
          String lastName = capitalize(parts[1]);
          String subject = parts[2].toLowerCase();
          String grade = " — " + gradeToString(parts[3]);
-         
-        System.out.println(name + " " + lastName + " " + subject + grade);
+          System.out.println(name + " " + lastName + " " + subject + grade);
+                
+       
             }
 
     }
