@@ -40,19 +40,17 @@ String[] arr = new String[]{
     }
 
     public String serializeGrades(String[] grades) {
-          String[] records= new String[grades.length];
+          // String[] records= new String[grades.length];
  
          for(int i=0; i< grades.length; i++){
             String[] parts = grades[i].split(" ");
-         //String name = capitalize(parts[0]);
-        // String lastName = capitalize(parts[1]);
-         //String subject = parts[2].toLowerCase();
+       
          String grade = gradeStringToInt(parts[4]);
-         records[i] = (parts[0] + "," + parts[1]+ "," + parts[2] + "," + grade);
+         grades[i] = (parts[0] + "," + parts[1]+ "," + parts[2] + "," + grade);
          
             }
 
-return String.join(";", records);
+return String.join(";", grades);
                
 
 
