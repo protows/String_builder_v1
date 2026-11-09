@@ -8,11 +8,6 @@ int index = text.indexOf(substring);
             count++;
             index = text.indexOf(substring, index + substring.length());
         }
-
-int textInd =  text.indexOf(substring) + substring.length();
-System.out.println("text:" + text.indexOf(substring) );
-
-
 return count;
 }
 
