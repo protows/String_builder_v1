@@ -9,9 +9,9 @@ public static void main(String[] args) {
     System.out.println(check.capitalize("я не волшебник, я только учусь!"));
     }
 public String capitalize(String str) {
-    if(str ==null || str.isEmpty()){
+    if(str ==null || str.isBlank()){
         return str;
     }
-    return str.substring(0,1).toUpperCase() + str.substring(1);
+    return str.substring(0,1).toUpperCase() + str.substring(1).toLowerCase();
     }
 }
