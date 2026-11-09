@@ -21,10 +21,10 @@ public class FindRepeats3 {
 
 static int numberOfRepeats(String text, String substring) {
 int count = 0;
+StringBuilder sb = new StringBuilder(text);
 while (text.contains(substring)) {
 count++;
-StringBuilder sb = new StringBuilder(text);
-text = sb.substring(text.indexOf(substring) + substring.length());
+ sb.substring(text.indexOf(substring) + substring.length());
 System.out.println("text:" + text);
 
 }
