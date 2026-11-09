@@ -8,23 +8,22 @@ package stringbuilder;
 public class FindRepeats3 {
 //static int numberOfRepeats(String text, String substring) {
 //int count = 0;
-//int index = text.indexOf(substring);
-//StringBuilder sb = new StringBuilder(text);
+//while (text.contains(substring)) {
+//count++;
 //
-// while (index != -1) {
-//            count++;
-//            sb.delete(0, index + substring.length());
-//            index = sb.indexOf(substring);
-//        }
+//text = text.substring(text.indexOf(substring) + substring.length());
+//System.out.println("text:" + text);
+//
+//}
 //return count;
 //}
 
 static int numberOfRepeats(String text, String substring) {
 int count = 0;
 StringBuilder sb = new StringBuilder(text);
-while (text.contains(substring)) {
+while (sb.indexOf(substring) != -1) {
 count++;
- sb.substring(text.indexOf(substring) + substring.length());
+sb.delete(0, sb.indexOf(substring) + substring.length());
 System.out.println("text:" + text);
 
 }
