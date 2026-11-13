@@ -19,7 +19,6 @@ public class String19 {
 
     public static void printCheck(String[] items) {
         int n = items.length;
-        System.out.println("n is " + n);
         String[] name = new String[n];
         String[] count = new String[n];
         String[] price = new String[n];
