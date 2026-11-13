@@ -46,9 +46,10 @@ public class String16 {
 
     public void gradeBeautifier(String grades) {
         String[] result = grades.split(";");
-        StringBuilder sb = new StringBuilder();
         for(int i=0; i< result.length; i++){
             String[] parts = result[i].split(",");
+                    StringBuilder sb = new StringBuilder();
+
             String spaces = " ";
             sb.append(capitalize(parts[0])).append(spaces).append( capitalize(parts[1])).append(spaces)
                     .append(parts[2].toLowerCase()).append(spaces).append(" — ").append(gradeToString(parts[3]));
